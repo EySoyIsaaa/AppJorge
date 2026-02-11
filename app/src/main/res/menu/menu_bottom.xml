@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="@string/bottom_home" />
+    <item
+        android:id="@+id/bottom_notificaciones"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="@string/bottom_notificaciones" />
+    <item
+        android:id="@+id/bottom_perfil"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="@string/bottom_perfil" />
+</menu>
