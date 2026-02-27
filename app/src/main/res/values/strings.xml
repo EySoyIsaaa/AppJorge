@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Demo Intents y Fragments</string>
+    <string name="main_screen_title">Aplicación funcional</string>
+
+    <string name="bottom_inicio">Inicio</string>
+    <string name="bottom_lista">Lista</string>
+
+    <string name="inicio_fragment_text">Este fragment muestra acciones y navegación con Intents.</string>
+    <string name="open_activity_button">Abrir otra Activity</string>
+
+    <string name="list_fragment_text">Lista generada dinámicamente. Toca un elemento para abrir detalle.</string>
+    <string name="list_item_title">Elemento %1$d</string>
+    <string name="list_item_description">Descripción generada para el elemento de prueba número %1$d.</string>
+
+    <string name="detail_from_inicio_title">Detalle desde fragment Inicio</string>
+    <string name="detail_from_inicio_desc">Esta Activity fue abierta con Intent explícito desde un Fragment.</string>
+</resources>
