@@ -1,13 +1,19 @@
-# AppJorge - Demo Android de múltiples vistas
+# AppJorge - Demo Android con Intents, Fragments y Listas
 
-Aplicación Android (Kotlin) preparada para abrir en **Android Studio**. Incluye en una sola pantalla:
+Aplicación Android (Kotlin) completamente funcional, preparada para abrir en **Android Studio**.
 
-- Toolbar (barra superior)
-- Menú lateral (Navigation Drawer)
-- Menú inferior (Bottom Navigation)
-- Lista de tarjetas (RecyclerView + MaterialCardView)
-- Botones de acción
-- Mensajes de feedback (Toast)
+## Qué incluye
+
+- `MainActivity` como pantalla principal.
+- Navegación con **Fragments**:
+  - `InicioFragment`
+  - `ListaFragment`
+- Uso de **Intent explícito** para abrir `DetailActivity` desde:
+  - Botón del `InicioFragment`
+  - Click en elementos de la lista del `ListaFragment`
+- **Generación dinámica de listas** (20 elementos) con `RecyclerView`.
+
+> No incluye funcionalidad de "Hola Mundo".
 
 ## Requisitos
 
@@ -15,30 +21,21 @@ Aplicación Android (Kotlin) preparada para abrir en **Android Studio**. Incluye
 - SDK Android 34
 - JDK 17
 
-## Cómo abrir en Android Studio
+## Abrir en Android Studio (macOS)
 
-1. Abre Android Studio.
-2. Selecciona **Open** y elige esta carpeta (`/workspace/AppJorge`).
-3. Espera a que termine el sync de Gradle.
-4. Ejecuta la app en un emulador o dispositivo Android.
+```bash
+cd /ruta/a/AppJorge
+open -a "Android Studio" .
+```
 
-## Nota importante sobre archivos binarios en PR
+Luego sincroniza Gradle y ejecuta en emulador/dispositivo.
 
-Para evitar problemas al crear PR en plataformas que no aceptan binarios, **este repo no versiona** `gradle/wrapper/gradle-wrapper.jar`.
+## Nota sobre binarios en PR
 
-Si Android Studio o tu entorno lo solicita, puedes regenerarlo así:
+Este repo no versiona `gradle/wrapper/gradle-wrapper.jar` para evitar errores de PR por archivos binarios.
+
+Si tu entorno lo necesita, regenera el wrapper con:
 
 ```bash
 gradle wrapper --gradle-version 8.7 --no-validate-url
 ```
-
-> También puedes usar la opción de Android Studio para sincronizar/regenerar el wrapper cuando lo pida.
-
-## Estructura principal
-
-- `app/src/main/java/com/example/appjorge/MainActivity.kt`
-- `app/src/main/res/layout/activity_main.xml`
-- `app/src/main/res/layout/content_main.xml`
-- `app/src/main/res/menu/menu_drawer.xml`
-- `app/src/main/res/menu/menu_bottom.xml`
-

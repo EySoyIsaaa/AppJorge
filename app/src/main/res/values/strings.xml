@@ -1,30 +1,17 @@
 <resources>
-    <string name="app_name">Demo Vistas Android</string>
-    <string name="main_screen_title">Pantalla Principal</string>
-    <string name="welcome_message">Ejemplo de app con múltiples elementos de vista simultáneos.</string>
-    <string name="default_selected">Selecciona una opción del menú.</string>
-    <string name="selected_option">Seleccionado: %1$s</string>
+    <string name="app_name">Demo Intents y Fragments</string>
+    <string name="main_screen_title">Aplicación funcional</string>
 
-    <string name="drawer_open">Abrir menú lateral</string>
-    <string name="drawer_close">Cerrar menú lateral</string>
-    <string name="drawer_inicio">Inicio</string>
-    <string name="drawer_reportes">Reportes</string>
-    <string name="drawer_configuracion">Configuración</string>
-    <string name="nav_header_subtitle">Menú de prueba con información</string>
+    <string name="bottom_inicio">Inicio</string>
+    <string name="bottom_lista">Lista</string>
 
-    <string name="bottom_home">Home</string>
-    <string name="bottom_notificaciones">Notificaciones</string>
-    <string name="bottom_perfil">Perfil</string>
+    <string name="inicio_fragment_text">Este fragment muestra acciones y navegación con Intents.</string>
+    <string name="open_activity_button">Abrir otra Activity</string>
 
-    <string name="card_menu_1_title">Menú de Productos</string>
-    <string name="card_menu_1_desc">Consulta productos, precios y categorías de ejemplo.</string>
-    <string name="card_menu_2_title">Menú de Clientes</string>
-    <string name="card_menu_2_desc">Visualiza información de clientes y datos de contacto.</string>
-    <string name="card_menu_3_title">Menú de Reportes</string>
-    <string name="card_menu_3_desc">Revisa resultados de prueba y estados generales.</string>
+    <string name="list_fragment_text">Lista generada dinámicamente. Toca un elemento para abrir detalle.</string>
+    <string name="list_item_title">Elemento %1$d</string>
+    <string name="list_item_description">Descripción generada para el elemento de prueba número %1$d.</string>
 
-    <string name="primary_action">Acción principal</string>
-    <string name="secondary_action">Acción secundaria</string>
-    <string name="primary_action_message">Se ejecutó la acción principal.</string>
-    <string name="secondary_action_message">Se ejecutó la acción secundaria.</string>
+    <string name="detail_from_inicio_title">Detalle desde fragment Inicio</string>
+    <string name="detail_from_inicio_desc">Esta Activity fue abierta con Intent explícito desde un Fragment.</string>
 </resources>
