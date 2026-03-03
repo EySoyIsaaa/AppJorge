@@ -1,19 +1,15 @@
-# AppJorge - Demo Android con Intents, Fragments y Listas
+# AppJorge - Aplicación básica multitarea en Android Studio
 
-Aplicación Android (Kotlin) completamente funcional, preparada para abrir en **Android Studio**.
+Aplicación Android en Kotlin, completamente funcional, pensada para abrir y ejecutar en **Android Studio**.
 
-## Qué incluye
+## Funcionalidades
 
-- `MainActivity` como pantalla principal.
-- Navegación con **Fragments**:
-  - `InicioFragment`
-  - `ListaFragment`
-- Uso de **Intent explícito** para abrir `DetailActivity` desde:
-  - Botón del `InicioFragment`
-  - Click en elementos de la lista del `ListaFragment`
-- **Generación dinámica de listas** (20 elementos) con `RecyclerView`.
-
-> No incluye funcionalidad de "Hola Mundo".
+- Navegación principal con `MainActivity` + `BottomNavigation`.
+- `InicioFragment` con demostración de **multitarea**:
+  - Ejecuta dos tareas en paralelo (rápida y lenta) usando corrutinas.
+  - Cada tarea actualiza su propia barra de progreso y estado.
+- Uso de **Intent explícito** para abrir `DetailActivity`.
+- `ListaFragment` con `RecyclerView` y 20 elementos generados dinámicamente.
 
 ## Requisitos
 
@@ -21,21 +17,15 @@ Aplicación Android (Kotlin) completamente funcional, preparada para abrir en **
 - SDK Android 34
 - JDK 17
 
-## Abrir en Android Studio (macOS)
+## Cómo ejecutar
 
-```bash
-cd /ruta/a/AppJorge
-open -a "Android Studio" .
-```
+1. Abre el proyecto en Android Studio.
+2. Sincroniza Gradle.
+3. Ejecuta en un emulador o dispositivo Android.
 
-Luego sincroniza Gradle y ejecuta en emulador/dispositivo.
+## Solución rápida de problemas de Gradle
 
-## Nota sobre binarios en PR
-
-Este repo no versiona `gradle/wrapper/gradle-wrapper.jar` para evitar errores de PR por archivos binarios.
-
-Si tu entorno lo necesita, regenera el wrapper con:
-
-```bash
-gradle wrapper --gradle-version 8.7 --no-validate-url
-```
+- Este repositorio **no versiona binarios** del wrapper (`gradle-wrapper.jar`) para mantener compatibilidad en PRs.
+- Si `./gradlew` falla por jar faltante, regenera el wrapper con: `gradle wrapper --gradle-version 8.7 --no-validate-url`.
+- Si estás detrás de proxy corporativo, configura proxy en `~/.gradle/gradle.properties`.
+- Si falla con *SDK location not found*, crea `local.properties` con `sdk.dir=/ruta/a/Android/Sdk` o configura `ANDROID_HOME`.

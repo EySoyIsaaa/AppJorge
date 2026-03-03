@@ -5,8 +5,14 @@
     <string name="bottom_inicio">Inicio</string>
     <string name="bottom_lista">Lista</string>
 
-    <string name="inicio_fragment_text">Este fragment muestra acciones y navegación con Intents.</string>
+    <string name="inicio_fragment_text">Este fragment demuestra multitarea con dos procesos en paralelo y navegación con Intents.</string>
     <string name="open_activity_button">Abrir otra Activity</string>
+    <string name="start_tasks_button">Iniciar multitarea</string>
+    <string name="task_one_title">Tarea 1 (rápida)</string>
+    <string name="task_two_title">Tarea 2 (lenta)</string>
+    <string name="task_pending">Estado: pendiente</string>
+    <string name="task_running">Estado: en progreso</string>
+    <string name="task_finished">Estado: finalizada</string>
 
     <string name="list_fragment_text">Lista generada dinámicamente. Toca un elemento para abrir detalle.</string>
     <string name="list_item_title">Elemento %1$d</string>
